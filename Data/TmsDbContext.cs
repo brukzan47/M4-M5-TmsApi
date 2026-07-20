@@ -1,0 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using TmsApi.Entities;
+
+namespace TmsApi.Data;
+
+public sealed class TmsDbContext(DbContextOptions<TmsDbContext> options)
+    : DbContext(options)
+{
+    public DbSet<Student> Students => Set<Student>();
+    public DbSet<Course> Courses => Set<Course>();
+    public DbSet<Enrollment> Enrollments => Set<Enrollment>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(TmsDbContext).Assembly);
+    }
+}

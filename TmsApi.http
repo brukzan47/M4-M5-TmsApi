@@ -1,0 +1,29 @@
+@host = http://localhost:5000
+
+### Protected route — expected 401
+GET {{host}}/api/assessments/results
+
+### Protected route — expected 200
+GET {{host}}/api/assessments/results
+X-Training-User: Samson
+
+### Enroll
+POST {{host}}/api/enrollments
+Content-Type: application/json
+
+{
+  "studentId": 1,
+  "courseId": 1
+}
+
+### All enrollments
+GET {{host}}/api/enrollments
+
+### ProblemDetails
+GET {{host}}/api/error
+
+### Paged students
+GET {{host}}/api/students?page=1&pageSize=20
+
+### Top courses
+GET {{host}}/api/reports/top-courses
