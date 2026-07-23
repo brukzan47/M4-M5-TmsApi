@@ -39,7 +39,7 @@ builder.Services.AddDbContext<TmsDbContext>(options =>
 });
 
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
-builder.Services.AddSingleton<EnrollmentWorker>();
+//builder.Services.AddSingleton<EnrollmentWorker>();
 
 builder.Services
     .AddOptions<PaymentOptions>()
@@ -57,15 +57,13 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-if (app.Environment.IsDevelopment())
-{
+
     app.MapOpenApi();
     app.MapScalarApiReference();
-}
 
 app.MapControllers();
 
-app.MapGet("/api/assessments/results", () => Results.Ok(new
+/*app.MapGet("/api/assessments/results", () => Results.Ok(new
 {
     courseCode = "CS-101",
     studentId = "S-001",
@@ -83,6 +81,6 @@ app.MapGet("/api/enrollments/worker-smoke", async (
 {
     await worker.ProcessBatchAsync(ct);
     return Results.Ok("processed");
-});
+});*/
 
 app.Run();
