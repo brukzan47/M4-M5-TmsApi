@@ -39,7 +39,7 @@ builder.Services.AddDbContext<TmsDbContext>(options =>
 });
 
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
-builder.Services.AddSingleton<EnrollmentWorker>();
+//builder.Services.AddSingleton<EnrollmentWorker>();
 
 builder.Services
     .AddOptions<PaymentOptions>()
@@ -57,11 +57,9 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-if (app.Environment.IsDevelopment())
-{
     app.MapOpenApi();
     app.MapScalarApiReference();
-}
+
 
 app.MapControllers();
 
