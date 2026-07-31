@@ -2284,32 +2284,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brukb\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aau\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brukb\\Downloads\\TMS_All_Modules_Code_and_Git\\TMS_All_Modules\\M4-M5-TmsApi\\TmsApi.csproj",
+      "projectUniqueName": "C:\\Users\\aau\\M4-M5-TmsApi\\TmsApi.csproj",
       "projectName": "TmsApi",
-      "projectPath": "C:\\Users\\brukb\\Downloads\\TMS_All_Modules_Code_and_Git\\TMS_All_Modules\\M4-M5-TmsApi\\TmsApi.csproj",
-      "packagesPath": "C:\\Users\\brukb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brukb\\Downloads\\TMS_All_Modules_Code_and_Git\\TMS_All_Modules\\M4-M5-TmsApi\\obj\\",
+      "projectPath": "C:\\Users\\aau\\M4-M5-TmsApi\\TmsApi.csproj",
+      "packagesPath": "C:\\Users\\aau\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aau\\M4-M5-TmsApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\brukb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\aau\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2384,7 +2376,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
