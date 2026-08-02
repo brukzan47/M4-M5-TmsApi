@@ -42,6 +42,7 @@ builder.Services.AddDbContext<TmsDbContext>(options =>
 
 
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
+//builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 
 builder.Services.AddScoped<ICourseService,CourseService>();
 //builder.Services.AddSingleton<EnrollmentWorker>();
