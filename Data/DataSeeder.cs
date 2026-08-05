@@ -6,7 +6,9 @@ namespace TmsApi.Data;
 
 public static class DataSeeder
 {
-    private static readonly (string Code, string Title, int MaxCapacity)[] Courses =
+    private static readonly (string Code, string Title, int MaxCapacity)
+[] Courses =
+    
     [
         ("CSE-101", "Web Development Fundamentals", 30),
         ("CSE-102", "TypeScript Essentials", 30),
